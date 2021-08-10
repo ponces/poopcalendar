@@ -1,0 +1,96 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (Android)",
+            "type": "shell",
+            "command": "flutter build apk --target-platform android-arm64 --split-per-abi",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build (iOS)",
+            "type": "shell",
+            "command": "flutter build ios",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build (Web)",
+            "type": "shell",
+            "command": "flutter build web",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean (Flutter)",
+            "type": "shell",
+            "command": "flutter clean && flutter pub get",
+            "problemMatcher": []
+        },
+        {
+            "label": "Install (Android)",
+            "type": "shell",
+            "command": "adb install build\\app\\outputs\\flutter-apk\\app-arm64-v8a-release.apk",
+            "problemMatcher": []
+        },
+        {
+            "label": "Deploy (Web)",
+            "type": "shell",
+            "command": "bash firebase deploy",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean & Build (Android)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Clean (Flutter)",
+                "Build (Android)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean & Build (iOS)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Clean (Flutter)",
+                "Build (iOS)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean & Build (Web)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Clean (Flutter)",
+                "Build (Web)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean & Install (Android)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Clean (Flutter)",
+                "Build (Android)",
+                "Install (Android)",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build & Install (Android)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build (Android)",
+                "Install (Android)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build & Deploy (Web)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build (Web)",
+                "Deploy (Web)"
+            ],
+            "problemMatcher": []
+        },
+    ]
+}
