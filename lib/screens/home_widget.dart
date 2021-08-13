@@ -33,9 +33,9 @@ class _HomeWidgetState extends State<HomeWidget> {
     super.initState();
     _applyAppSettings();
     _tabs = [
-      TodayWidget(widget.calendar, widget.isCozinho),
-      CalendarWidget(widget.isCozinho),
-      CardsWidget(widget.calendar, widget.isCozinho),
+      TodayWidget(DateTime.now(), widget.calendar, widget.isCozinho),
+      CalendarWidget(widget.calendar, widget.isCozinho),
+      CardsWidget(widget.calendar),
     ];
   }
 
@@ -64,7 +64,6 @@ class _HomeWidgetState extends State<HomeWidget> {
       bottomNavigationBar: BottomNavigationBar(
         onTap: _onTabTapped,
         currentIndex: _currentTab,
-        selectedItemColor: Colors.brown[400],
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.today),

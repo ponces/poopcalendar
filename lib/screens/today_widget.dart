@@ -4,8 +4,9 @@ import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:poopcalendar/utils/json_parser.dart';
 
 class TodayWidget extends StatelessWidget {
-  TodayWidget(this.calendar, this.isCozinho);
+  TodayWidget(this.date, this.calendar, this.isCozinho);
 
+  final DateTime date;
   final List<dynamic> calendar;
   final bool isCozinho;
 
@@ -21,7 +22,7 @@ class TodayWidget extends StatelessWidget {
               alignment: Alignment.topRight,
               padding: BubbleEdges.all(20),
               nip: BubbleNip.leftBottom,
-              color: Colors.brown,
+              color: Theme.of(context).accentColor,
               child: Text(
                 FlutterI18n.translate(context, 'todayWidget.mainBubble'),
                 style: TextStyle(
@@ -37,8 +38,8 @@ class TodayWidget extends StatelessWidget {
                   height: 80.0,
                   child: Image.asset(
                     isCozinho
-                        ? 'assets/images/avatar_cozinho.png'
-                        : 'assets/images/avatar_cozinha.png',
+                        ? 'assets/images/avatar_cozinha.png'
+                        : 'assets/images/avatar_cozinho.png',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -48,9 +49,9 @@ class TodayWidget extends StatelessWidget {
               alignment: Alignment.topLeft,
               padding: BubbleEdges.all(20),
               nip: BubbleNip.rightBottom,
-              color: Colors.brown,
+              color: Theme.of(context).accentColor,
               child: Text(
-                getTodayDescription(this.calendar),
+                getDateDescription(this.calendar, this.date),
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16.0,
@@ -64,8 +65,8 @@ class TodayWidget extends StatelessWidget {
                   height: 80.0,
                   child: Image.asset(
                     isCozinho
-                        ? 'assets/images/avatar_cozinho.png'
-                        : 'assets/images/avatar_cozinha.png',
+                        ? 'assets/images/avatar_cozinha.png'
+                        : 'assets/images/avatar_cozinho.png',
                     fit: BoxFit.cover,
                   ),
                 ),

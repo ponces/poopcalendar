@@ -17,15 +17,19 @@ void main() {
           themes: {
             0: ThemeData(
               primarySwatch: Colors.brown,
-              accentColor: Colors.brown,
               brightness: Brightness.light,
             ),
             1: ThemeData(
               primarySwatch: Colors.brown,
+              accentColor: Colors.brown,
+              toggleableActiveColor: Colors.brown,
               brightness: Brightness.dark,
             ),
           },
-          fallbackTheme: ThemeData.light(),
+          fallbackTheme: ThemeData(
+            primarySwatch: Colors.brown,
+            brightness: Brightness.light,
+          ),
         ),
         builder: (context, theme) => MaterialApp(
           title: 'Poop Calendar',

@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:poopcalendar/utils/json_parser.dart';
 
 class CardsWidget extends StatelessWidget {
-  CardsWidget(this.calendar, this.isCozinho);
+  CardsWidget(this.calendar);
 
   final List<dynamic> calendar;
-  final bool isCozinho;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(40.0),
+      padding: EdgeInsets.all(20.0),
       child: Center(
         child: ListView.builder(
           itemCount: calendar.length,
@@ -26,9 +24,9 @@ class CardsWidget extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         getDayDate(
+                          context,
                           calendar,
                           i,
-                          FlutterI18n.currentLocale(context)!.languageCode,
                         ),
                         style: TextStyle(fontSize: 16.0),
                         textAlign: TextAlign.center,
