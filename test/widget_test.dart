@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:poopcalendar/main.dart';
+import 'package:poopcalendar/screens/home_widget.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(HomeWidget(
+      isCozinho: true,
+      calendar: List.empty(),
+    ));
 
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);

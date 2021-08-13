@@ -1,0 +1,29 @@
+{
+  "homeWidget": {
+    "widgetTitle": "Poop Calendar",
+    "todayWidget": "Today",
+    "calendarWidget": "Calendar",
+    "cardsWidget": "Cards",
+    "optionAbout": "About",
+    "optionSettings": "Settings",
+    "aboutDialogText": "This app was designed to keep up with daily descriptions of the calendar created by Cocós.\n\nWith lots of love and caress by"
+  },
+  "todayWidget": {
+    "mainBubble": "Gosto de ti porque..."
+  },
+  "settingsWidget": {
+    "widgetTitle": "Settings",
+    "appearanceSectionTitle": "Appearance",
+    "appThemeSettings": "App theme",
+    "optionFollowSystem": "Follow system settings",
+    "optionLight": "Light",
+    "optionDark": "Dark",
+    "languageSettings": "Language",
+    "optionEnglish": "English",
+    "optionPortuguese": "Portuguese",
+    "basicsSectionTitle": "Basics",
+    "calendarSettings": "Who are you?",
+    "optionCozinho": "Cózinho",
+    "optionCozinha": "Cózinha"
+  }
+}

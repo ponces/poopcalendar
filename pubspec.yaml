@@ -11,12 +11,35 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  bubble: ^1.2.1
+  dynamic_themes: ^1.1.0
   flutter:
     sdk: flutter
+  flutter_i18n: ^0.22.4
+  flutter_phoenix: ^1.0.0
+  package_info_plus: ^1.0.4
+  shared_preferences: ^2.0.6
+  splashscreen:
+    git:
+      url: git://github.com/DPLYR-dev/SplashScreenFlutterPackage.git
+  url_launcher: ^6.0.9
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.9.1
   flutter_test:
     sdk: flutter
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon-512x512.png"
+  image_path_ios: "assets/images/icon-512x512-square.png"
+  adaptive_icon_background: "#795548"
+  adaptive_icon_foreground: "assets/images/icon-foreground-432x432.png"
+
 flutter:
   uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/i18n/
+    - assets/images/

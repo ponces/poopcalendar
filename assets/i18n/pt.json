@@ -1,0 +1,29 @@
+{
+  "homeWidget": {
+    "widgetTitle": "Calendário Cocó",
+    "todayWidget": "Hoje",
+    "calendarWidget": "Calendário",
+    "cardsWidget": "Cartões",
+    "optionAbout": "Sobre",
+    "optionSettings": "Definições",
+    "aboutDialogText": "Esta aplicação foi desenhada para ficar a par das descrições diárias do calendário criado pelos Cocós.\n\nCom muito amor e carinho por"
+  },
+  "todayWidget": {
+    "mainBubble": "Gosto de ti porque..."
+  },
+  "settingsWidget": {
+    "widgetTitle": "Definições",
+    "appearanceSectionTitle": "Aparência",
+    "appThemeSettings": "Tema",
+    "optionFollowSystem": "Seguir definições de sistema",
+    "optionLight": "Claro",
+    "optionDark": "Escuro",
+    "languageSettings": "Linguagem",
+    "optionEnglish": "Inglês",
+    "optionPortuguese": "Português",
+    "basicsSectionTitle": "Básico",
+    "calendarSettings": "Quem és tu?",
+    "optionCozinho": "Cózinho",
+    "optionCozinha": "Cózinha"
+  }
+}
