@@ -35,7 +35,7 @@ flutter_icons:
   image_path: "assets/images/icon-512x512.png"
   image_path_ios: "assets/images/icon-512x512-square.png"
   adaptive_icon_background: "#795548"
-  adaptive_icon_foreground: "assets/images/icon-foreground-432x432.png"
+  adaptive_icon_foreground: "assets/images/icon-foreground-512x512.png"
 
 flutter:
   uses-material-design: true
